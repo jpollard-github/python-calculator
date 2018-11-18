@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("Unit Tests") {
       steps {
-        sh "python -m unittest test_calculator.py"
+        sh "python3 -m unittest test_calculator.py"
       }
     }
     stage("Run App") {
       steps {
-        echo "sh 'python calculator.py 2 3'"
+        echo "sh 'python3 calculator.py 2 3'"
       }
     }
   }
