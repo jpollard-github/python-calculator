@@ -1,5 +1,9 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'python3'
+    }
+  }
   stages {
     stage("Unit Tests") {
       steps {
