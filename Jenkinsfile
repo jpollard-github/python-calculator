@@ -12,7 +12,7 @@ pipeline {
     }
     stage("Run App") {
       steps {
-        echo "sh 'python3 calculator.py 2 3'"
+       sh "python3 calculator.py 2 3"
       }
     }
   }
