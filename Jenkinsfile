@@ -7,7 +7,7 @@ pipeline {
       }
     }
     stage("Run App") {
-      steos {
+      steps {
         echo "sh 'python calculator.py 2 3'"
       }
     }
